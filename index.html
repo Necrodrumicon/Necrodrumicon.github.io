@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Connecticus</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -29,17 +29,21 @@
             </ul>
         </nav>
         <div class="search-bar">
+
             <div class="search-bar__logo-container">
                 Logo
             </div>
+
             <form class="search-bar__form-container">
-                <label class="search-bar__form-label" for="busqueda">Buscar</label>
+                <!-- <label class="search-bar__form-label" for="busqueda">Buscar</label> -->
                 <input class="search-bar__form-search" id="busqueda" type="search">
-                <input class="search-bar__form-submit" type="submit" value="Buscar">
+                <input class="search-bar__form-submit" type="submit" value="">
             </form>
+
             <div class="search-bar__carrito-container">
-                C
+                <a class="search-bar__carrito-container" href="/carrito.html"><img src="/img/productos/shopping_cart.svg" alt="carrito"></a>
             </div>
+
             <div class="menu-toggle">
                 <label class="menu-toggle__label" for="menu">
                     <span class="menu-toggle__pan-arriba"></span>
@@ -47,30 +51,37 @@
                     <span class="menu-toggle__pan-abajo"></span>
                 </label>
             </div>
+
         </div>
     </header>
     <main>
         <section class="section-cards">
 
             <header class="section-cards__header">
-                <h1>Lorem ipsum, dolor sit amet consectetur adipisicing.</h1>
-                <p>Se encontraron X productos</p>
+                <h1>Connecticus</h1>
+                <p>Más buscados:</p>
             </header>
 
             <div class="cards-container">
                 
-                <a class="card" href="#">
-                    <article class="card__article">
-                        <div
+                <a class="card" href="#"><!--flip card-->
+                    <article class="card__article"><!--flip card inner-->
+                        <div 
                             class="card__image"
                             style="background-image: url('img/productos/notebook-lenovo.jpg')"
-                        >
+                        ><!--flip card front-->
                         </div>
                         
-                        <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                        <div class="card__content"><!--flip card back-->
+                            <h3 class="card__heading">Notebook</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>17"</li>
+                                    <li>Liviano</li>
+                                    <li>Windows 11</li>
+                                </ul>
+                                <p class="card__price">$85.000</p>
                             </div>
                         </div>
                     </article>
@@ -85,9 +96,15 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Smartphone</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>6"</li>
+                                    <li>4 cámaras</li>
+                                    <li>5G</li>
+                                </ul>
+                                <p class="card__price">$210.000</p>
                             </div>
                         </div>
                     </article>
@@ -102,9 +119,15 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Cámara fotográfica</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>Diseño vintage</li>
+                                    <li>Definición 8k</li>
+                                    <li>Bluetooth, WI-FI, NFC</li>
+                                </ul>
+                                <p class="card__price">$175.500</p>
                             </div>
                         </div>
                     </article>
@@ -119,9 +142,15 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Auriculares</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>Noise-cancellation</li>
+                                    <li>True wireless</li>
+                                    <li>Ultra boost</li>
+                                </ul>
+                                <p class="card__price">$35.000</p>
                             </div>
                         </div>
                     </article>
@@ -136,9 +165,15 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Parlante</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>Bluetooth</li>
+                                    <li>Water-proof</li>
+                                    <li>Incluye estuche rígido</li>
+                                </ul>
+                                <p class="card__price">$25.000</p>
                             </div>
                         </div>
                     </article>
@@ -153,9 +188,14 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Smart voice assistant</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>WI-FI</li>
+                                    <li>2da generación</li>
+                                </ul>
+                                <p class="card__price">$5.000</p>
                             </div>
                         </div>
                     </article>
@@ -170,9 +210,15 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Smartphone</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>7"</li>
+                                    <li>4 cámaras</li>
+                                    <li>Night vision</li>
+                                </ul>
+                                <p class="card__price">$200.000</p>
                             </div>
                         </div>
                     </article>
@@ -187,9 +233,15 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Drone</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>Quad-copter</li>
+                                    <li>Cámara HD</li>
+                                    <li>Hasta 200m de altura</li>
+                                </ul>
+                                <p class="card__price">$158.000</p>
                             </div>
                         </div>
                     </article>
@@ -204,9 +256,15 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Notebook</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>17"</li>
+                                    <li>Liviano</li>
+                                    <li>Windows 11</li>
+                                </ul>
+                                <p class="card__price">$85.000</p>
                             </div>
                         </div>
                     </article>
@@ -221,9 +279,15 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Drone</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>Quad-copter</li>
+                                    <li>Cámara 4K</li>
+                                    <li>Hasta 300m de altura</li>
+                                </ul>
+                                <p class="card__price">$185.000</p>
                             </div>
                         </div>
                     </article>
@@ -238,9 +302,15 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Cámara fotográfica</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <p class="card__characteristics">Características:</p>
+                                <ul>
+                                    <li>Diseño vintage</li>
+                                    <li>Definición 8k</li>
+                                    <li>Bluetooth, WI-FI, NFC</li>
+                                </ul>
+                                <p class="card__price">$175.500</p>
                             </div>
                         </div>
                     </article>
@@ -255,9 +325,14 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Chromecast</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <ul>
+                                    <li>WI-FI, bluetooth, HDMI</li>
+                                    <li>3ra generación</li>
+                                    <li>Full HD</li>
+                                </ul>
+                                <p class="card__price">$6.500</p>
                             </div>
                         </div>
                     </article>
@@ -272,9 +347,14 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Parlante</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <ul>
+                                    <li>Bluetooth</li>
+                                    <li>Water-proof</li>
+                                    <li>Incluye estuche rígido</li>
+                                </ul>
+                                <p class="card__price">$25.000</p>
                             </div>
                         </div>
                     </article>
@@ -289,9 +369,13 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Smart voice assistant</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <ul>
+                                    <li>WI-FI</li>
+                                    <li>2da generación</li>
+                                </ul>
+                                <p class="card__price">$5.000</p>
                             </div>
                         </div>
                     </article>
@@ -306,9 +390,14 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Smart TV</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <ul>
+                                    <li>72"</li>
+                                    <li>8k</li>
+                                    <li>OLed</li>
+                                </ul>
+                                <p class="card__price">$225.000</p>
                             </div>
                         </div>
                     </article>
@@ -323,9 +412,14 @@
                         </div>
                         
                         <div class="card__content">
-                            <h3 class="card__heading">Título</h3>
+                            <h3 class="card__heading">Drone</h3>
                             <div class="card__description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <ul>
+                                    <li>Quad-copter</li>
+                                    <li>Cámara HD</li>
+                                    <li>Hasta 200m de altura</li>
+                                </ul>
+                                <p class="card__price">$158.000</p>
                             </div>
                         </div>
                     </article>

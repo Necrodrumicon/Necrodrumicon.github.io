@@ -5,9 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alta</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    <h1>Alta</h1>
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <div class="search-bar__logo-container">
+                Logo
+            </div>
+            <form class="search-bar__form-container">
+                <!-- <label class="search-bar__form-label" for="busqueda">Buscar</label> -->
+                <input class="search-bar__form-search" id="busqueda" type="search">
+                <input class="search-bar__form-submit" type="submit" value="">
+            </form>
+            <div class="search-bar__carrito-container">
+                <a class="search-bar__carrito-container" href="/carrito.html"><img src="/img/productos/shopping_cart.svg" alt="carrito"></a>
+            </div>
+            <div class="menu-toggle">
+                <label class="menu-toggle__label" for="menu">
+                    <span class="menu-toggle__pan-arriba"></span>
+                    <span class="menu-toggle__medallon"></span>
+                    <span class="menu-toggle__pan-abajo"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <h1>Formulario de alta</h1>
+    <form action="alta.js"> 
+            <div class="form-container">
+            <div class="name">
+                <label for="name">Nombre y apellido:</label>
+                <input id="name" name="name" autofocus required minlength="2" placeholder="John Doe">
+            </div>
+            <div class="price">
+                <label for="price">Precio [$]:</label>
+                <input id="price" type="number" name="price" required min="0" step="5">
+            </div>
+            <div class="stock">
+                <label for="stock">Stock:</label>
+                <input id="stock" type="number" name="stock">
+            </div>
+            <div class="brand">
+                <label for="brand">Marca:</label>
+                <select name="brand" id="brand">
+                    <option value="Seleccione una marca"></option>
+                    <option value="2">Apple</option>
+                    <option value="8">Canon</option>
+                    <option value="10">Dell</option>
+                    <option value="5">DJI</option>
+                    <option value="8">Google</option>
+                    <option value="7">JBL</option>
+                    <option value="12">LG</option>
+                    <option value="3">Samsung</option>
+                    <option value="8">Sony</option>
+                </select>
+            </div>
+            <div class="class">
+                <label for="class">Categoría:</label>
+                <select name="class" id="class">
+                    <option value="">Seleccione una categoría</option>
+                    <optgroup label="Informática">
+                        <option value="10">PC</option>
+                        <option value="2">Notebook</option>
+                        <option value="4">Tablet</option>
+                        <option value="12">Periféricos</option>
+                    </optgroup>
+                    <optgroup label="Telefonía">
+                        <option value="14">Smartphones</option>
+                        <option value="8">Telefonos</option>
+                        <option value="5">Faxes</option>
+                    </optgroup>
+                    <optgroup label="Fotografía y video">
+                        <option value="13">Cámaras</option>
+                        <option value="3">Videofilmadoras</option>
+                    </optgroup>
+                    <optgroup label="Televisión">
+                        <option value="10">TV</option>
+                        <option value="2">Smart TV</option>
+                        <option value="4">Periféricos</option>
+                    </optgroup>
+                    <optgroup label="Drones">
+                        <option value="18">Drones</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="photo">
+                <label for="photo">Foto:</label>
+                <input type="file" name="photo" id="photo" required>
+            </div>
+            <div class="details">
+                <label for="details">Detalles:</label>
+                <br>
+                <textarea name="details" id="details"></textarea>
+            </div>
+            <div class="delivery">
+                <label for="delivery">Envío sin cargo</label>
+                <input type="checkbox" id="delivery" name="delivery" value="si">
+            </div>
+            <div class="mercadopago">
+                <label for="maercadopago">Mercadopago</label>
+                <input type="checkbox" id="maercadopago" name="mercadopago" value="si">
+            </div>
+            <div class="sale">
+                <input type="submit" value="Vender">
+                <input type="reset" value="Restablecer">
+            </div>
+        </div>
+        </form>
 </body>
 </html>

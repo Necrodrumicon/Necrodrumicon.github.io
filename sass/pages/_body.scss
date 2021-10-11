@@ -1,0 +1,20 @@
+body {
+    background-color: #03071E;
+    color: #F48C06;
+    h1 {
+        font-size: 3em;
+        text-align: center;
+        padding: 2em;
+    }
+    p {
+        padding-bottom: 1em;
+        padding-left: 3em;
+        font-size: 1.2em;
+    }
+    .name, .price, .stock, .brand, .class, .photo, .details, .delivery, .comments, .email, .mercadopago{
+        padding-bottom: 1em;
+        padding-left: 3em;
+        font-size: 1.2em;
+    }
+    
+}

@@ -1,11 +1,13 @@
-@import 'abstracts/variables';
 
+@import 'abstracts/variables';
 @import 'base/reset';
 @import 'base/typography';
 @import 'base/utilities';
-
 @import 'components/card';
-
 @import 'layout/header';
-
 @import 'pages/index';
+@import 'pages/body';
+@import 'pages/form';
+
+
+
