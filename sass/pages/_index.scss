@@ -22,24 +22,10 @@
     flex-wrap: wrap;
     gap: 4em;
     justify-content: space-evenly;
-    // background-color: burlywood;//media test
-    // .card {
-    //     width: 50px;//media test
-    // }
 }
 
 @media (min-width: 1024px) {
     .cards-container {
-        // gap: 2em;
         flex-wrap: wrap;
     }
 }
-
-// @media (max-width: 768px) {
-//     .cards-container {
-//         flex-direction: column;
-//         // gap: 2em;
-//         // flex-wrap: wrap;
-//         width: 100%;
-//     }
-// }

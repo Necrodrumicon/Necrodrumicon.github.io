@@ -67,9 +67,13 @@
 .search-bar__logo-container {
     order: 1;
     background-color: #370617;
+    background-image: url(/img/productos/Connecticus.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     flex-basis: 10%;
     text-align: center;
-    color: #ffba08;
+    color: black;
 }
 
 .search-bar__form-container {
@@ -157,5 +161,4 @@
     .nav-bar__nav-list {
         flex-direction: column;
     }
-
 }
